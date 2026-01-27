@@ -5,8 +5,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:sirin.koca@uio.no",
-      value: "sirin.koca@uio.no",
+      href: "mailto:sirinkoc@uio.no",
+      value: "sirinkoc@uio.no",
     },
     {
       icon: Linkedin,
@@ -22,15 +22,13 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <p className="text-accent font-medium tracking-wider uppercase text-sm mb-4">
-              Get In Touch
-            </p>
+            <p className="text-accent font-medium tracking-wider uppercase text-sm mb-4">Get In Touch</p>
             <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
               Let's Connect
             </h2>
             <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto">
-              Interested in my research? Have questions about my thesis or want to collaborate? 
-              I'd love to hear from you.
+              Interested in my research? Have questions about my thesis or want to collaborate? I'd love to hear from
+              you.
             </p>
           </div>
 
@@ -47,12 +45,8 @@ const Contact = () => {
                 <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/30 transition-colors">
                   <link.icon className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="font-medium text-primary-foreground mb-1">
-                  {link.label}
-                </h3>
-                <p className="text-sm text-primary-foreground/60">
-                  {link.value}
-                </p>
+                <h3 className="font-medium text-primary-foreground mb-1">{link.label}</h3>
+                <p className="text-sm text-primary-foreground/60">{link.value}</p>
               </a>
             ))}
           </div>
