@@ -14,6 +14,12 @@ const Contact = () => {
       href: "https://linkedin.com/in/sirinkoca",
       value: "Connect on LinkedIn",
     },
+    {
+      icon: Github,
+      label: "GitHub",
+      href: "https://github.com/sirinkoca",
+      value: "View my code",
+    },
   ];
 
   return (
