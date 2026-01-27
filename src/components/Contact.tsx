@@ -5,20 +5,14 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      href: "mailto:your.email@uio.no",
-      value: "your.email@uio.no",
+      href: "mailto:sirin.koca@uio.no",
+      value: "sirin.koca@uio.no",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/yourprofile",
+      href: "https://linkedin.com/in/sirinkoca",
       value: "Connect on LinkedIn",
-    },
-    {
-      icon: Github,
-      label: "GitHub",
-      href: "https://github.com/yourprofile",
-      value: "View my code",
     },
   ];
 
