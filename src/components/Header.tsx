@@ -42,12 +42,21 @@ const Header = () => {
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
-                className="text-sm font-medium text-primary-foreground/70 hover:text-primary-foreground transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full"
-              >
-                {link.label}
-              </a>
+              {link.href.startsWith("#") ? (
+                <a
+                  href={link.href}
+                  className="text-sm font-medium text-primary-foreground/70 hover:text-primary-foreground transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  to={link.href}
+                  className="text-sm font-medium text-primary-foreground/70 hover:text-primary-foreground transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full"
+                >
+                  {link.label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
