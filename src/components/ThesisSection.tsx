@@ -117,15 +117,23 @@ const ThesisSection = () => {
           <ul className="space-y-4">
             <li className="flex items-start gap-4">
               <span className="flex-shrink-0 w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center text-accent font-semibold text-sm">1</span>
-              <p className="prose-academic">How can multi-agent systems be designed to autonomously construct and manage data pipelines while preserving user privacy?</p>
+              <p className="prose-academic"><strong>Architecture:</strong> How can a multi-agent LLM architecture be designed so that specialized agents collaboratively generate end-to-end data pipelines (ingestion, transformation, validation, orchestration)?</p>
             </li>
             <li className="flex items-start gap-4">
               <span className="flex-shrink-0 w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center text-accent font-semibold text-sm">2</span>
-              <p className="prose-academic">What architectural patterns enable privacy-aware decision-making in autonomous AI agents?</p>
+              <p className="prose-academic"><strong>Agent Interaction & Coordination:</strong> What agent roles, communication patterns, and coordination mechanisms ensure reliability, consistency, and conflict resolution during automated pipeline generation?</p>
             </li>
             <li className="flex items-start gap-4">
               <span className="flex-shrink-0 w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center text-accent font-semibold text-sm">3</span>
-              <p className="prose-academic">How can we balance system performance with privacy guarantees in real-time data processing?</p>
+              <p className="prose-academic"><strong>Privacy Engineering:</strong> How can PbD/SbD constraints (data minimization, sensitivity labelling, anonymization, access control, encryption, provenance logging) be technically embedded into the generation workflow without reducing flexibility or correctness?</p>
+            </li>
+            <li className="flex items-start gap-4">
+              <span className="flex-shrink-0 w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center text-accent font-semibold text-sm">4</span>
+              <p className="prose-academic"><strong>Pipeline Quality:</strong> To what extent do LLM-generated pipelines satisfy structural correctness, functional completeness, and privacy/security constraints compared to manually engineered pipelines?</p>
+            </li>
+            <li className="flex items-start gap-4">
+              <span className="flex-shrink-0 w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center text-accent font-semibold text-sm">5</span>
+              <p className="prose-academic"><strong>Performance, Scalability & Efficiency:</strong> How do multi-agent generation strategies impact performance, scalability, and energy usage, and what trade-offs emerge when privacy/security constraints are enforced?</p>
             </li>
           </ul>
         </div>
