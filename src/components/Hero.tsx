@@ -18,7 +18,17 @@ const Hero = () => {
             Sirin Koca • Master's Student • University of Oslo & SINTEF  
           </p>
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-primary-foreground">
-            Intelligent & Privacy-Aware Multi-Agent Architecture                          
+
+
+Multi-Agent Privacy-Aware AI Architecture for Intelligent Data Pipelines
+
+
+
+
+
+
+
+
           </h1>
           <p className="text-primary-foreground/70 text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed">
             Documenting my academic journey and research in building privacy-aware 
@@ -26,14 +36,11 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#thesis"
-            className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-8 py-3 rounded-lg transition-all hover:shadow-lg hover:shadow-accent/20">
+            <a href="#thesis" className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-8 py-3 rounded-lg transition-all hover:shadow-lg hover:shadow-accent/20">
               
               Explore My Thesis
             </a>
-            <a
-              href="#about"
-              className="inline-flex items-center gap-2 border border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 font-medium px-8 py-3 rounded-lg transition-all">
+            <a href="#about" className="inline-flex items-center gap-2 border border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 font-medium px-8 py-3 rounded-lg transition-all">
               
               Learn More
             </a>
@@ -47,8 +54,4 @@ const Hero = () => {
           </a>
         </div>
       </div>
-    </section>);
-
-};
-
-export default Hero;
+    </section>);};export default Hero;
