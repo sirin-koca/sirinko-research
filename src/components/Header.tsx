@@ -31,12 +31,12 @@ const Header = () => {
       }`}
     >
       <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <a
-          href="#"
+        <Link
+          to="/"
           className="font-serif text-xl font-semibold text-foreground hover:text-accent transition-colors"
         >
           Portfolio
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-8">
