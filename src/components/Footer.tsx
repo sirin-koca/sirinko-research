@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted">
-            © {currentYear} Sirin Koca. University of Oslo.
+            © {currentYear} Sirin Koca. University of Oslo. · Master Thesis (2026–2027)
           </p>
           <nav className="flex items-center gap-6">
             <a
