@@ -5,7 +5,7 @@ const SkillsSection = () => {
     {
       title: "Research & Writing",
       icon: FileText,
-      skills: ["LaTeX", "Overleaf", "Zotero", "Academic Writing", "Literature Review"],
+      skills: ["LaTeX", "Overleaf", "Zotero", "Academic Writing", "Literature Review", "Research Methods"],
     },
     {
       title: "Data & Programming",
