@@ -1,5 +1,15 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const navLinks = [
+    { href: "#about", label: "About" },
+    { href: "#thesis", label: "Thesis" },
+    { href: "/system-architecture", label: "System Architecture" },
+    { href: "#journey", label: "Journey" },
+    { href: "#contact", label: "Contact" },
+  ];
 
   return (
     <footer className="bg-foreground py-8">
@@ -9,30 +19,25 @@ const Footer = () => {
             © {currentYear} Sirin Koca. University of Oslo. · Master Thesis (2026–2027)
           </p>
           <nav className="flex items-center gap-6">
-            <a
-              href="#about"
-              className="text-sm text-muted hover:text-background transition-colors"
-            >
-              About
-            </a>
-            <a
-              href="#thesis"
-              className="text-sm text-muted hover:text-background transition-colors"
-            >
-              Thesis
-            </a>
-            <a
-              href="#journey"
-              className="text-sm text-muted hover:text-background transition-colors"
-            >
-              Journey
-            </a>
-            <a
-              href="#contact"
-              className="text-sm text-muted hover:text-background transition-colors"
-            >
-              Contact
-            </a>
+            {navLinks.map((link) =>
+              link.href.startsWith("#") ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm text-muted hover:text-background transition-colors"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="text-sm text-muted hover:text-background transition-colors"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
           </nav>
         </div>
       </div>
