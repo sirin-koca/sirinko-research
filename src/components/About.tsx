@@ -40,15 +40,15 @@ const About = () => {
             <div className="space-y-4 prose-academic">
               <p>
                 As a Master's student at the University of Oslo, I'm passionate about 
-                the intersection of artificial intelligence, privacy engineering, and 
+                the intersection of artificial intelligence, privacy and security engineering, and 
                 systems architecture. My research focuses on creating AI systems that 
-                are not just intelligent, but also respectful of user privacy.
+                are not just intelligent, but also secure and respectful of user privacy.
               </p>
               <p>
                 This website serves as a living document of my academic journey—from 
                 coursework discoveries to thesis breakthroughs. Here, I share insights, 
                 challenges, and progress as I work towards building a privacy-aware 
-                multi-agent AI system for data pipelines.
+                multi-agent AI system for automated data pipelines.
               </p>
             </div>
           </div>
