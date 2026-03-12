@@ -137,6 +137,51 @@ const ThesisSection = () => {
             </li>
           </ul>
         </div>
+
+        {/* Methodology */}
+        <div className="mt-12 bg-card rounded-2xl p-8 card-elevated">
+          <h3 className="font-serif text-xl font-semibold text-foreground mb-8">
+            Methodology
+          </h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                <Cpu className="w-5 h-5 text-accent" />
+              </div>
+              <div>
+                <h4 className="font-serif font-semibold text-foreground mb-1">System Architecture Design</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">Define specialized agents (Pipeline Designer, Data Minimization, Security Constraints, Validation, Orchestrator) with communication protocols and coordination model.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                <ShieldCheck className="w-5 h-5 text-accent" />
+              </div>
+              <div>
+                <h4 className="font-serif font-semibold text-foreground mb-1">Privacy Engineering Integration</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">Implement privacy and security constraints as technical rules — data minimization, sensitivity tagging, anonymization, encryption, access control, and provenance metadata.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                <Code className="w-5 h-5 text-accent" />
+              </div>
+              <div>
+                <h4 className="font-serif font-semibold text-foreground mb-1">Prototype Implementation</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">Implement using AutoGen, LangChain Agents, CrewAI, or a custom multi-agent controller, generating pipeline descriptions comparable to Airflow/Kubeflow-style DAGs.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                <BarChart3 className="w-5 h-5 text-accent" />
+              </div>
+              <div>
+                <h4 className="font-serif font-semibold text-foreground mb-1">Evaluation</h4>
+                <p className="text-sm text-muted-foreground leading-relaxed">Compare auto-generated pipelines against manually designed baselines using metrics: structural correctness, agent consistency, performance, privacy/security compliance, scalability, and energy usage.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
