@@ -47,7 +47,7 @@ const SkillsSection = () => {
           </div>
 
           {/* Skills Grid */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 [&>*:nth-last-child(-n+2):nth-child(3n+1)]:md:col-start-1">
             {skillCategories.map((category) => (
               <div
                 key={category.title}
