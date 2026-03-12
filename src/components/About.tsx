@@ -14,8 +14,8 @@ const About = () => {
   },
   {
     icon: Shield,
-    title: "Privacy Engineering",
-    description: "Focused on building systems that respect user privacy while delivering powerful AI capabilities."
+    title: "Privacy & Security Engineering",
+    description: "Embedding Privacy-by-Design and Security-by-Design principles as technical constraints in automated systems."
   },
   {
     icon: Code,
