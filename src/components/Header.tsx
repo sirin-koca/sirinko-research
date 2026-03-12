@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,6 +17,7 @@ const Header = () => {
   const navLinks = [
     { href: "#about", label: "About" },
     { href: "#thesis", label: "Thesis" },
+    { href: "/system-architecture", label: "System Architecture" },
     { href: "#journey", label: "Journey" },
     { href: "#contact", label: "Contact" },
   ];
@@ -40,12 +42,21 @@ const Header = () => {
         <ul className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
-                className="text-sm font-medium text-primary-foreground/70 hover:text-primary-foreground transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full"
-              >
-                {link.label}
-              </a>
+              {link.href.startsWith("#") ? (
+                <a
+                  href={link.href}
+                  className="text-sm font-medium text-primary-foreground/70 hover:text-primary-foreground transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  to={link.href}
+                  className="text-sm font-medium text-primary-foreground/70 hover:text-primary-foreground transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full"
+                >
+                  {link.label}
+                </Link>
+              )}
             </li>
           ))}
         </ul>
@@ -65,13 +76,23 @@ const Header = () => {
           <ul className="container mx-auto px-6 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a
-                  href={link.href}
-                  className="block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.label}
-                </a>
+                {link.href.startsWith("#") ? (
+                  <a
+                    href={link.href}
+                    className="block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    to={link.href}
+                    className="block text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
