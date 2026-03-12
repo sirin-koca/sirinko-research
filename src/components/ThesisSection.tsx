@@ -1,4 +1,4 @@
-import { Bot, Database, Lock, Workflow } from "lucide-react";
+import { Bot, Database, Lock, Workflow, Cpu, ShieldCheck, Code, BarChart3 } from "lucide-react";
 
 const ThesisSection = () => {
   const concepts = [
