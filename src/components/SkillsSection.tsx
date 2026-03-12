@@ -23,7 +23,7 @@ const SkillsSection = () => {
       skills: ["Kubeflow", "Docker"],
     },
     {
-      title: "Visualization / Prototyping",
+      title: "Visualization",
       icon: Palette,
       skills: ["Plotly", "Streamlit", "Jupyter Notebook", "Tableau", "Prototyping"],
     },
