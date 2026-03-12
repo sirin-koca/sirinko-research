@@ -10,7 +10,7 @@ const SkillsSection = () => {
     {
       title: "Data & Programming",
       icon: Code,
-      skills: ["Python", "R", "SPSS", "Data Analysis", "Machine Learning"],
+      skills: ["Python", "R", "Data Analysis", "Machine Learning"],
     },
     {
       title: "Design & Visualization",
