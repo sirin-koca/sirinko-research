@@ -3,19 +3,29 @@ import { FileText, Code, Palette, Database, BarChart3, PenTool } from "lucide-re
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: "Research & Writing",
+      title: "Research",
       icon: FileText,
-      skills: ["LaTeX", "Overleaf", "Zotero", "Academic Writing", "Literature Review", "Research Methods"],
+      skills: ["LaTeX", "Zotero", "Literature Review", "Research Methods"],
     },
     {
-      title: "Data & Programming",
+      title: "Programming",
       icon: Code,
-      skills: ["Python", "R", "Data Analysis", "Machine Learning"],
+      skills: ["Python", "R", "Data Analysis"],
     },
     {
-      title: "Design & Visualization",
+      title: "AI Frameworks",
+      icon: Database,
+      skills: ["LangChain", "AutoGen"],
+    },
+    {
+      title: "Orchestration",
+      icon: BarChart3,
+      skills: ["Kubeflow", "Docker"],
+    },
+    {
+      title: "Visualization / Prototyping",
       icon: Palette,
-      skills: ["Figma", "Plotly", "Streamlit", "Jupyter Notebook", "Prototyping", "Tableau"],
+      skills: ["Plotly", "Streamlit", "Jupyter Notebook", "Tableau"],
     },
   ];
 
