@@ -15,7 +15,7 @@ const SkillsSection = () => {
     {
       title: "Design & Visualization",
       icon: Palette,
-      skills: ["Figma", "Data Visualization", "Diagrams", "Prototyping"],
+      skills: ["Figma", "Data Visualization", "Plotly", "Streamlit", "Diagrams", "Prototyping"],
     },
   ];
 
