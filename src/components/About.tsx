@@ -9,13 +9,13 @@ const About = () => {
   },
   {
     icon: Brain,
-    title: "AI & Machine Learning",
-    description: "Specializing in multi-agent systems, autonomous AI architectures, and intelligent automation."
+    title: "Multi-Agent LLM Systems",
+    description: "Specializing in multi-agent LLM architectures, agent coordination, and automated pipeline generation."
   },
   {
     icon: Shield,
-    title: "Privacy Engineering",
-    description: "Focused on building systems that respect user privacy while delivering powerful AI capabilities."
+    title: "Privacy & Security Engineering",
+    description: "Embedding Privacy-by-Design and Security-by-Design principles as technical constraints in automated systems."
   },
   {
     icon: Code,
@@ -39,16 +39,13 @@ const About = () => {
             </h2>
             <div className="space-y-4 prose-academic">
               <p>
-                As a Master's student at the University of Oslo, I'm passionate about the intersection of artificial intelligence, systems architecture, privacy and security engineering. My research focuses on creating AI systems that are not just intelligent, but also secure and respectful of user privacy.
-              
-
-
+                As a Master's student in Informatics – Programming and System Architecture (PROSA) at the University of Oslo, my work is situated at the intersection of multi-agent LLM architecture, privacy engineering, distributed systems, and automated data pipeline generation.
               </p>
               <p>
                 This website serves as a living document of my academic journey—from 
                 coursework discoveries to thesis breakthroughs. Here, I share insights, 
-                challenges, and progress as I work towards building a privacy-aware 
-                multi-agent AI system for data pipelines.
+                challenges, and progress as I architect multi-agent LLM systems for 
+                automated and privacy-aware data pipeline generation.
               </p>
             </div>
           </div>
