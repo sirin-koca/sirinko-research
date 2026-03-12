@@ -9,8 +9,8 @@ const About = () => {
   },
   {
     icon: Brain,
-    title: "AI & Machine Learning",
-    description: "Specializing in multi-agent systems, autonomous AI architectures, and intelligent automation."
+    title: "Multi-Agent LLM Systems",
+    description: "Specializing in multi-agent LLM architectures, agent coordination, and automated pipeline generation."
   },
   {
     icon: Shield,
