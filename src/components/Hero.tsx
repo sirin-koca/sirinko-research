@@ -17,8 +17,8 @@ const Hero = () => {
           <p className="text-accent font-medium tracking-wider uppercase text-sm mb-4">
             Sirin Koca • Master's Student • University of Oslo
           </p>
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Trustworthy AI
+          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-secondary">
+            | Intelligent Architecture Behind Automation |                       
           </h1>
           <p className="text-primary-foreground/70 text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed">
             Documenting my academic journey and research in building privacy-aware 
