@@ -15,10 +15,11 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="animate-slide-up">
           <p className="text-accent font-medium tracking-wider uppercase text-sm mb-4">
-            Master's Student • University of Oslo
+            Sirin Koca • Master's Student • University of Oslo
           </p>
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Hi, I'm Sirin Koca
+            Intelligent Architecture Behind Automation:
+Privacy Aware Multi-Agent AI-System                     
             <span className="block text-gradient">Privacy-Aware AI</span>
           </h1>
           <p className="text-primary-foreground/70 text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed">
@@ -27,16 +28,15 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="#thesis"
-              className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-8 py-3 rounded-lg transition-all hover:shadow-lg hover:shadow-accent/20"
-            >
+            <a href="#thesis"
+            className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-8 py-3 rounded-lg transition-all hover:shadow-lg hover:shadow-accent/20">
+              
               Explore My Thesis
             </a>
             <a
               href="#about"
-              className="inline-flex items-center gap-2 border border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 font-medium px-8 py-3 rounded-lg transition-all"
-            >
+              className="inline-flex items-center gap-2 border border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 font-medium px-8 py-3 rounded-lg transition-all">
+              
               Learn More
             </a>
           </div>
@@ -49,8 +49,8 @@ const Hero = () => {
           </a>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Hero;
