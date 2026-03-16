@@ -45,6 +45,12 @@ const Header = () => {
     }
   };
 
+  const navTextClass = isScrolled
+    ? "text-foreground/70 hover:text-foreground"
+    : "text-primary-foreground/70 hover:text-primary-foreground";
+
+  const navUnderlineClass = "relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full whitespace-nowrap";
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -64,7 +70,9 @@ const Header = () => {
               navigate("/");
             }
           }}
-          className="font-serif text-xl font-semibold text-foreground hover:text-accent transition-colors cursor-pointer"
+          className={`font-serif text-xl font-semibold hover:text-accent transition-colors cursor-pointer ${
+            isScrolled ? "text-foreground" : "text-foreground"
+          }`}
         >
           Portfolio
         </a>
@@ -77,14 +85,14 @@ const Header = () => {
                 <a
                   href={link.href}
                   onClick={(e) => handleAnchorClick(e, link.href)}
-                  className="text-sm font-medium text-primary-foreground/70 hover:text-primary-foreground transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full whitespace-nowrap"
+                  className={`text-sm font-medium transition-colors ${navTextClass} ${navUnderlineClass}`}
                 >
                   {link.label}
                 </a>
               ) : (
                 <Link
                   to={link.href}
-                  className="text-sm font-medium text-primary-foreground/70 hover:text-primary-foreground transition-colors relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-accent after:transition-all hover:after:w-full whitespace-nowrap"
+                  className={`text-sm font-medium transition-colors ${navTextClass} ${navUnderlineClass}`}
                 >
                   {link.label}
                 </Link>
