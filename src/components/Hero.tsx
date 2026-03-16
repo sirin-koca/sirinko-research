@@ -25,9 +25,14 @@ Architecting Multi-Agent AI Systems
           
           
           </h1>
-          <p className="text-primary-foreground/70 text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed">
-            Documenting my research journey in architecting privacy-aware multi-agent AI systems for intelligent data pipelines. The project investigates how specialized agents collaborate to automatically design data workflows while embedding privacy and security rules by design. 
-          
+          <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto mb-8 leading-relaxed md:text-xl">An AI system that automatically designs governed data pipelines using coordinated agents.
+
+
+
+
+
+
+
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
