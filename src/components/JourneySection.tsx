@@ -6,7 +6,7 @@ const JourneySection = () => {
       icon: BookOpen,
       date: "Fall 2025",
       title: "Literature Review",
-      description: "Surveying existing research on multi-agent systems, privacy-preserving ML, and data pipeline architectures.",
+      description: "Surveying research on multi-agent AI systems, privacy- and security-by-design architectures, and automated data pipeline generation.",
       status: "in-progress",
     },
     {
