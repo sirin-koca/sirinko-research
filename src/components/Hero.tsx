@@ -42,7 +42,7 @@ Architecting Multi-Agent AI Systems
 
         {/* Scroll indicator */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <a href="#about" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
+          <a href="#about" onClick={(e) => { e.preventDefault(); document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
             <ArrowDown size={24} />
           </a>
         </div>
