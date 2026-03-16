@@ -15,16 +15,24 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="animate-slide-up">
           <p className="text-accent font-medium tracking-wider uppercase text-sm mb-4">
-            Sirin Koca • Master's Student • University of Oslo & SINTEF  
+            Sirin Koca • Master's Thesis • University of Oslo • SINTEF  
           </p>
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight text-primary-foreground">
-            Architecting Multi-Agent AI Systems
+          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-primary-foreground">
+             
+Architecting Multi-Agent AI Systems                                                                  
+                
+          
+          
+          
           </h1>
-          <p className="text-primary-foreground/60 text-lg md:text-xl lg:text-2xl max-w-3xl mx-auto mb-6 leading-relaxed font-light">
-            An AI system that automatically designs governed data pipelines using coordinated agents.
-          </p>
-          <p className="text-primary-foreground/40 text-sm md:text-base lg:text-lg max-w-3xl mx-auto mb-10 leading-loose font-light tracking-wide">
-            This thesis investigates how specialized AI agents can collaborate to automatically design data pipelines while embedding privacy-by-design and security-by-design principles directly into the system architecture. The project develops a prototype multi-agent architecture and evaluates its ability to generate reliable and compliant workflows compared to manually engineered pipelines.
+          <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto mb-8 leading-relaxed md:text-xl">An AI system that automatically designs governed data pipelines using coordinated agents.
+
+
+
+
+
+
+
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
