@@ -35,13 +35,18 @@ Architecting Multi-Agent AI Systems
 
           </p>
           
+          {/* Scroll indicator - above buttons */}
+          <div className="mb-6 animate-bounce">
+            <a href="#thesis" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
+              <ArrowDown size={24} className="mx-auto" />
+            </a>
+          </div>
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="#thesis" className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-8 py-3 rounded-lg transition-all hover:shadow-lg hover:shadow-accent/20">
-              
               Explore My Thesis
             </a>
             <a href="#about" className="inline-flex items-center gap-2 border border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 font-medium px-8 py-3 rounded-lg transition-all">
-              
               Learn More
             </a>
           </div>
@@ -52,13 +57,6 @@ Architecting Multi-Agent AI Systems
               This thesis investigates how specialized AI agents can collaborate to automatically design data pipelines while embedding privacy-by-design and security-by-design principles directly into the system architecture. The project develops a prototype multi-agent architecture and evaluates its ability to generate reliable and compliant workflows compared to manually engineered pipelines.
             </p>
           </div>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <a href="#about" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
-            <ArrowDown size={24} />
-          </a>
         </div>
       </div>
     </section>);};export default Hero;
