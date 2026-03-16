@@ -47,8 +47,35 @@ const SkillsSection = () => {
           </div>
 
           {/* Skills Grid */}
-          <div className="grid md:grid-cols-3 gap-8 [&>*:nth-last-child(-n+2):nth-child(3n+1)]:md:col-start-1">
-            {skillCategories.map((category) => (
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {/* First 3 items */}
+            {skillCategories.slice(0, 3).map((category) => (
+              <div
+                key={category.title}
+                className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow"
+              >
+                <div className="w-12 h-12 bg-accent/20 rounded-full flex items-center justify-center mb-4">
+                  <category.icon className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="font-semibold text-foreground text-lg mb-4">
+                  {category.title}
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {category.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-3 py-1 bg-secondary text-secondary-foreground text-sm rounded-full"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+          {/* Last 2 items centered */}
+          <div className="grid sm:grid-cols-2 gap-8 max-w-[66.666%] mx-auto mt-8 max-sm:max-w-full">
+            {skillCategories.slice(3).map((category) => (
               <div
                 key={category.title}
                 className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow"

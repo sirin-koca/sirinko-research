@@ -41,7 +41,7 @@ const ThesisSection = () => {
         </div>
 
         {/* Visual Architecture Representation */}
-        <div className="bg-card rounded-2xl p-8 md:p-12 card-elevated mb-12">
+        <div className="bg-card rounded-2xl p-6 sm:p-8 md:p-12 card-elevated mb-12 overflow-hidden">
           <h3 className="font-serif text-xl font-semibold text-foreground mb-6 text-center">
             System Architecture Overview
           </h3>
