@@ -45,6 +45,13 @@ Architecting Multi-Agent AI Systems
               Learn More
             </a>
           </div>
+
+          {/* Summary text box */}
+          <div className="mt-10 max-w-3xl mx-auto border border-primary-foreground/15 rounded-xl bg-primary-foreground/5 backdrop-blur-sm px-8 py-6">
+            <p className="text-primary-foreground/80 text-sm md:text-base leading-relaxed font-light tracking-wide">
+              This thesis investigates how specialized AI agents can collaborate to automatically design data pipelines while embedding privacy-by-design and security-by-design principles directly into the system architecture. The project develops a prototype multi-agent architecture and evaluates its ability to generate reliable and compliant workflows compared to manually engineered pipelines.
+            </p>
+          </div>
         </div>
 
         {/* Scroll indicator */}
