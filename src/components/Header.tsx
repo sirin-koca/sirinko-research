@@ -54,12 +54,20 @@ const Header = () => {
       }`}
     >
       <nav className="container mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-        <Link
-          to="/"
-          className="font-serif text-xl font-semibold text-foreground hover:text-accent transition-colors"
+        <a
+          href="/"
+          onClick={(e) => {
+            e.preventDefault();
+            if (location.pathname === "/") {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            } else {
+              navigate("/");
+            }
+          }}
+          className="font-serif text-xl font-semibold text-foreground hover:text-accent transition-colors cursor-pointer"
         >
           Portfolio
-        </Link>
+        </a>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex items-center gap-4 lg:gap-8">
