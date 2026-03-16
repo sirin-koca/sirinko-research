@@ -56,7 +56,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+        isLightBg
           ? "bg-card/90 backdrop-blur-md shadow-sm"
           : "bg-transparent"
       }`}
