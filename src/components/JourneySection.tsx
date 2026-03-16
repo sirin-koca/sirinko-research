@@ -126,6 +126,7 @@ const JourneySection = () => {
           </p>
           <a
             href="#contact"
+            onClick={(e) => { e.preventDefault(); document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' }); }}
             className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-6 py-3 rounded-lg transition-all hover:shadow-lg hover:shadow-accent/20"
           >
             Get Updates

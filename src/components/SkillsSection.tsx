@@ -75,7 +75,7 @@ const SkillsSection = () => {
           </div>
           {/* Last 2 items centered */}
           <div className="grid sm:grid-cols-2 gap-8 max-w-[66.666%] mx-auto mt-8 max-sm:max-w-full">
-            {skillCategories.map((category) => (
+            {skillCategories.slice(3).map((category) => (
               <div
                 key={category.title}
                 className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-shadow"
