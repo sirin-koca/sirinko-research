@@ -45,7 +45,9 @@ const Header = () => {
     }
   };
 
-  const navTextClass = isScrolled
+  const isLightBg = isScrolled || location.pathname !== "/";
+
+  const navTextClass = isLightBg
     ? "text-foreground/70 hover:text-foreground"
     : "text-primary-foreground/70 hover:text-primary-foreground";
 
