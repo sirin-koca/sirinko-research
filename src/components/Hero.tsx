@@ -19,7 +19,7 @@ const Hero = () => {
           </p>
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-primary-foreground">
              
-Architecting Secure Multi‑Agent AI Automation                                                                  
+Architecting Multi-Agent AI Systems                                                                  
                 
           
           
