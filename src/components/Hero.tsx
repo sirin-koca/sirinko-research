@@ -26,15 +26,17 @@ Architecting Multi-Agent AI Systems
           
           </h1>
           <p className="text-primary-foreground/70 text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed">
-            Documenting my academic journey and research in building privacy-aware 
-            multi-agent AI systems for intelligent data pipelines.
+            Documenting my research journey in architecting privacy-aware multi-agent AI systems for intelligent data pipelines. The project investigates how specialized agents collaborate to automatically design data workflows while embedding privacy and security rules by design. 
+          
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#thesis" onClick={(e) => { e.preventDefault(); document.querySelector('#thesis')?.scrollIntoView({ behavior: 'smooth' }); }} className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-8 py-3 rounded-lg transition-all hover:shadow-lg hover:shadow-accent/20">
+            <a href="#thesis" className="inline-flex items-center gap-2 bg-accent hover:bg-accent/90 text-accent-foreground font-medium px-8 py-3 rounded-lg transition-all hover:shadow-lg hover:shadow-accent/20">
+              
               Explore My Thesis
             </a>
-            <a href="#about" onClick={(e) => { e.preventDefault(); document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' }); }} className="inline-flex items-center gap-2 border border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 font-medium px-8 py-3 rounded-lg transition-all">
+            <a href="#about" className="inline-flex items-center gap-2 border border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10 font-medium px-8 py-3 rounded-lg transition-all">
+              
               Learn More
             </a>
           </div>
@@ -42,7 +44,7 @@ Architecting Multi-Agent AI Systems
 
         {/* Scroll indicator */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
-          <a href="#about" onClick={(e) => { e.preventDefault(); document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' }); }} className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
+          <a href="#about" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors">
             <ArrowDown size={24} />
           </a>
         </div>
