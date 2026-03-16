@@ -45,7 +45,9 @@ const Header = () => {
     }
   };
 
-  const navTextClass = isScrolled
+  const isLightBg = isScrolled || location.pathname !== "/";
+
+  const navTextClass = isLightBg
     ? "text-foreground/70 hover:text-foreground"
     : "text-primary-foreground/70 hover:text-primary-foreground";
 
@@ -54,7 +56,7 @@ const Header = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+        isLightBg
           ? "bg-card/90 backdrop-blur-md shadow-sm"
           : "bg-transparent"
       }`}
