@@ -55,7 +55,7 @@ const About = () => {
               <div className="flex items-center gap-6 pt-4">
                 <span className="text-xs text-muted-foreground uppercase tracking-wider">In collaboration with</span>
                 <a href="https://www.sintef.no/en/projects/2025/datapact/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
-                  <img src={sintefLogo} alt="SINTEF" className="h-7 w-auto" />
+                  <img src={sintefLogo} alt="SINTEF" className="h-7 w-auto mix-blend-multiply" />
                 </a>
                 <a href="https://datapact.eu" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
                   <img src={datapactLogo} alt="DataPACT" className="h-7 w-auto" />
