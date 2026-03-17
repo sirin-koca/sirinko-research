@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import flowirImg from "@/assets/flowir-bg.png";
 import Footer from "@/components/Footer";
 import {
   Bot,
