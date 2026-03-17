@@ -1,17 +1,8 @@
 import { ArrowDown } from "lucide-react";
-import flowirBg from "@/assets/flowir-bg.png";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden">
-      {/* Background image - faded and blended */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-[0.12] blur-[1.5px]"
-        style={{ backgroundImage: `url(${flowirBg})` }}
-      />
-      {/* Gradient overlays to blend image into background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[hsl(222_47%_11%/0.6)] via-transparent to-[hsl(222_47%_11%/0.8)]" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[hsl(222_47%_11%/0.5)] via-transparent to-[hsl(222_47%_11%/0.5)]" />
 
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
