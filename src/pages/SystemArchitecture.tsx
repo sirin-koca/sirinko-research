@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import flowirImg from "@/assets/flowir-bg.png";
 import Footer from "@/components/Footer";
 import {
   Bot,
@@ -229,6 +230,20 @@ const SystemArchitecture = () => {
               pipeline orchestration — designed for the Master Thesis
               (2026–2027).
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FlowIR Architecture Image */}
+      <section className="pb-8 section-padding pt-0">
+        <div className="container mx-auto max-w-5xl">
+          <div className="rounded-xl overflow-hidden border border-border shadow-lg">
+            <img
+              src={flowirImg}
+              alt="FlowIR multi-agent architecture diagram showing Planner, Orchestrator, Privacy, and Anonymization components"
+              className="w-full h-auto"
+              loading="lazy"
+            />
           </div>
         </div>
       </section>
