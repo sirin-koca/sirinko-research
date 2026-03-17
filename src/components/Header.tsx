@@ -73,7 +73,7 @@ const Header = () => {
             }
           }}
           className={`font-serif text-xl font-semibold hover:text-accent transition-colors cursor-pointer ${
-            isScrolled ? "text-foreground" : "text-foreground"
+            isLightBg ? "text-foreground" : "text-primary-foreground"
           }`}
         >
           Portfolio
