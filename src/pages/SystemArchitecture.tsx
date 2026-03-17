@@ -234,6 +234,20 @@ const SystemArchitecture = () => {
         </div>
       </section>
 
+      {/* FlowIR Architecture Image */}
+      <section className="pb-8 section-padding pt-0">
+        <div className="container mx-auto max-w-5xl">
+          <div className="rounded-xl overflow-hidden border border-border shadow-lg">
+            <img
+              src={flowirImg}
+              alt="FlowIR multi-agent architecture diagram showing Planner, Orchestrator, Privacy, and Anonymization components"
+              className="w-full h-auto"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* System Overview Diagram */}
       <section className="pb-16 section-padding">
         <div className="container mx-auto">
