@@ -1,4 +1,6 @@
 import { GraduationCap, Code, Brain, Shield } from "lucide-react";
+import datapactLogo from "@/assets/datapact-logo.png";
+import sintefLogo from "@/assets/sintef-logo.png";
 
 const About = () => {
   const highlights = [
@@ -50,6 +52,15 @@ const About = () => {
                 challenges, and progress as I work towards building a privacy-aware 
                 multi-agent AI system for data pipelines.
               </p>
+              <div className="flex items-center gap-6 pt-4">
+                <span className="text-xs text-muted-foreground uppercase tracking-wider">In collaboration with</span>
+                <a href="https://www.sintef.no/en/projects/2025/datapact/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
+                  <img src={sintefLogo} alt="SINTEF" className="h-7 w-auto" />
+                </a>
+                <a href="https://datapact.eu" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
+                  <img src={datapactLogo} alt="DataPACT" className="h-7 w-auto" />
+                </a>
+              </div>
             </div>
           </div>
 
