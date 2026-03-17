@@ -1,4 +1,6 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import datapactLogo from "@/assets/datapact-logo.png";
+import sintefLogoWhite from "@/assets/sintef-logo-white.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
