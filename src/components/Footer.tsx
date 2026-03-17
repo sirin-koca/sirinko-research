@@ -57,6 +57,15 @@ const Footer = () => {
             )}
           </nav>
         </div>
+        <div className="flex items-center justify-center gap-6 mt-6 pt-6 border-t border-muted-foreground/20">
+          <span className="text-xs text-muted/60 uppercase tracking-wider">In collaboration with</span>
+          <a href="https://www.sintef.no/en/projects/2025/datapact/" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-opacity">
+            <img src={sintefLogoWhite} alt="SINTEF" className="h-6 w-auto" />
+          </a>
+          <a href="https://datapact.eu" target="_blank" rel="noopener noreferrer" className="opacity-60 hover:opacity-100 transition-opacity">
+            <img src={datapactLogo} alt="DataPACT" className="h-6 w-auto" />
+          </a>
+        </div>
       </div>
     </footer>
   );
