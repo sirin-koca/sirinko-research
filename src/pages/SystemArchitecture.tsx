@@ -241,7 +241,7 @@ const SystemArchitecture = () => {
             <img
               src={flowirImg}
               alt="FlowIR multi-agent architecture diagram showing Planner, Orchestrator, Privacy, and Anonymization components"
-              className="w-full h-auto"
+              className="w-full h-auto opacity-60"
               loading="lazy"
             />
           </div>
