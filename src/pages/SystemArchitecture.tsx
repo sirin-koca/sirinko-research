@@ -236,7 +236,7 @@ const SystemArchitecture = () => {
 
       {/* FlowIR Architecture Image */}
       <section className="pb-8 section-padding pt-0">
-        <div className="container mx-auto max-w-5xl">
+        <div className="container mx-auto max-w-4xl">
           <div className="rounded-xl overflow-hidden border border-border shadow-lg">
             <img
               src={flowirImg}
