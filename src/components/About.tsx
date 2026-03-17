@@ -1,4 +1,6 @@
 import { GraduationCap, Code, Brain, Shield } from "lucide-react";
+import datapactLogo from "@/assets/datapact-logo.png";
+import sintefLogo from "@/assets/sintef-logo.png";
 
 const About = () => {
   const highlights = [
