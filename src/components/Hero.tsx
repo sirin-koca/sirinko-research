@@ -18,7 +18,7 @@ const Hero = () => {
           <p className="text-accent font-medium tracking-wider uppercase text-sm mb-4">
             Sirin Koca • Master's Thesis • University of Oslo • SINTEF  
           </p>
-          <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-primary-foreground">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-primary-foreground">
              
 Architecting Multi-Agent AI Systems                                                                  
                 
