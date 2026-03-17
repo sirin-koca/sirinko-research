@@ -249,7 +249,7 @@ const SystemArchitecture = () => {
       </section>
 
       {/* System Overview Diagram */}
-      <section className="pb-16 section-padding">
+      <section className="pb-16 section-padding pt-4">
         <div className="container mx-auto">
           <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-10 text-center">
             System Overview
