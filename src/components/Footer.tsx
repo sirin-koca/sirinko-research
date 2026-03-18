@@ -62,7 +62,7 @@ const Footer = () => {
             <span className="text-xs text-muted/60 uppercase tracking-[0.22em] leading-snug text-left sm:text-center">In collaboration with</span>
           </div>
           <a href="https://www.sintef.no/en/projects/2025/datapact/" target="_blank" rel="noopener noreferrer" className="flex h-14 w-full items-center justify-center rounded-lg border border-muted-foreground/15 bg-background/5 px-4 opacity-70 transition-opacity hover:opacity-100">
-            <img src={sintefLogoWhite} alt="SINTEF" className="max-h-6 w-auto object-contain" />
+            <img src={sintefLogoWhite} alt="SINTEF" className="max-h-[2.1rem] w-auto object-contain" />
           </a>
           <a href="https://datapact.eu" target="_blank" rel="noopener noreferrer" className="flex h-14 w-full items-center justify-center rounded-lg border border-muted-foreground/15 bg-background/5 px-4 opacity-70 transition-opacity hover:opacity-100">
             <img src={datapactLogo} alt="DataPACT" className="max-h-6 w-auto object-contain" />
