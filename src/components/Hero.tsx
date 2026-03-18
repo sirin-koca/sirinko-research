@@ -64,7 +64,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="flex h-10 w-32 items-center justify-center"
             >
-              <img src={sintefLogoWhite} alt="SINTEF" className="max-h-[2.16rem] w-auto object-contain" />
+              <img src={sintefLogoWhite} alt="SINTEF" className="max-h-[2.6rem] w-auto object-contain" />
             </a>
             <a
               href="https://datapact.eu"
