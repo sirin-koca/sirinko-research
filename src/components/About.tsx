@@ -52,13 +52,27 @@ const About = () => {
                 challenges, and progress as I work towards building a privacy-aware 
                 multi-agent AI system for data pipelines.
               </p>
-              <div className="flex items-center gap-6 pt-4">
-                <span className="text-xs text-muted-foreground uppercase tracking-wider">In collaboration with</span>
-                <a href="https://www.sintef.no/en/projects/2025/datapact/" target="_blank" rel="noopener noreferrer" className="flex h-6 w-24 items-center justify-center opacity-70 transition-opacity hover:opacity-100">
-                  <img src={sintefLogo} alt="SINTEF" className="max-h-full w-auto object-contain mix-blend-multiply" />
+              <div className="grid grid-cols-1 gap-3 pt-4 sm:grid-cols-3 sm:items-center sm:gap-4">
+                <div className="flex h-14 w-full items-center justify-start sm:justify-center">
+                  <span className="text-xs text-muted-foreground uppercase tracking-[0.22em] leading-snug text-left sm:text-center">
+                    In collaboration with
+                  </span>
+                </div>
+                <a
+                  href="https://www.sintef.no/en/projects/2025/datapact/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-14 w-full items-center justify-center rounded-lg border border-border/50 bg-card/50 px-4 opacity-80 transition-opacity hover:opacity-100"
+                >
+                  <img src={sintefLogo} alt="SINTEF" className="max-h-6 w-auto object-contain mix-blend-multiply" />
                 </a>
-                <a href="https://datapact.eu" target="_blank" rel="noopener noreferrer" className="flex h-6 w-24 items-center justify-center opacity-70 transition-opacity hover:opacity-100">
-                  <img src={datapactLogo} alt="DataPACT" className="max-h-full w-auto object-contain" />
+                <a
+                  href="https://datapact.eu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex h-14 w-full items-center justify-center rounded-lg border border-border/50 bg-card/50 px-4 opacity-80 transition-opacity hover:opacity-100"
+                >
+                  <img src={datapactLogo} alt="DataPACT" className="max-h-6 w-auto object-contain" />
                 </a>
               </div>
             </div>
