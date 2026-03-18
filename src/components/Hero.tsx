@@ -57,17 +57,12 @@ const Hero = () => {
 
       <div className="absolute inset-x-0 bottom-6 z-10 px-6">
         <div className="container mx-auto">
-          <div className="mx-auto grid max-w-3xl gap-3 sm:grid-cols-3 sm:items-center sm:gap-4">
-            <div className="flex h-14 items-center justify-start sm:justify-center">
-              <span className="text-left text-xs uppercase leading-snug tracking-[0.22em] text-primary-foreground/65 sm:text-center">
-                In collaboration with
-              </span>
-            </div>
+          <div className="mx-auto flex max-w-3xl items-center justify-center gap-8 sm:gap-12">
             <a
               href="https://www.sintef.no/en/projects/2025/datapact/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-14 w-full items-center justify-center rounded-xl border border-primary-foreground/15 bg-primary-foreground/5 px-4 backdrop-blur-sm transition-colors hover:bg-primary-foreground/10"
+              className="flex h-10 w-32 items-center justify-center"
             >
               <img src={sintefLogoWhite} alt="SINTEF" className="max-h-6 w-auto object-contain" />
             </a>
@@ -75,9 +70,13 @@ const Hero = () => {
               href="https://datapact.eu"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex h-14 w-full items-center justify-center rounded-xl border border-primary-foreground/15 bg-primary-foreground/5 px-4 backdrop-blur-sm transition-colors hover:bg-primary-foreground/10"
+              className="flex h-10 w-32 items-center justify-center"
             >
-              <img src={datapactLogo} alt="DataPACT" className="max-h-6 w-auto object-contain" />
+              <img
+                src={datapactLogo}
+                alt="DataPACT"
+                className="max-h-6 w-auto object-contain brightness-0 invert"
+              />
             </a>
           </div>
         </div>
