@@ -54,11 +54,11 @@ const About = () => {
               </p>
               <div className="flex items-center gap-6 pt-4">
                 <span className="text-xs text-muted-foreground uppercase tracking-wider">In collaboration with</span>
-                <a href="https://www.sintef.no/en/projects/2025/datapact/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
-                  <img src={sintefLogo} alt="SINTEF" className="h-7 w-auto mix-blend-multiply" />
+                <a href="https://www.sintef.no/en/projects/2025/datapact/" target="_blank" rel="noopener noreferrer" className="flex h-6 w-24 items-center justify-center opacity-70 transition-opacity hover:opacity-100">
+                  <img src={sintefLogo} alt="SINTEF" className="max-h-full w-auto object-contain mix-blend-multiply" />
                 </a>
-                <a href="https://datapact.eu" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
-                  <img src={datapactLogo} alt="DataPACT" className="h-7 w-auto" />
+                <a href="https://datapact.eu" target="_blank" rel="noopener noreferrer" className="flex h-6 w-24 items-center justify-center opacity-70 transition-opacity hover:opacity-100">
+                  <img src={datapactLogo} alt="DataPACT" className="max-h-full w-auto object-contain" />
                 </a>
               </div>
             </div>
