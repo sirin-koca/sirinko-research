@@ -52,25 +52,20 @@ const About = () => {
                 challenges, and progress as I work towards building a privacy-aware 
                 multi-agent AI system for data pipelines.
               </p>
-              <div className="grid grid-cols-1 gap-3 pt-4 sm:grid-cols-3 sm:items-center sm:gap-4">
-                <div className="flex h-14 w-full items-center justify-start sm:justify-center">
-                  <span className="text-xs text-muted-foreground uppercase tracking-[0.22em] leading-snug text-left sm:text-center">
-                    In collaboration with
-                  </span>
-                </div>
+              <div className="flex items-center justify-center gap-6 pt-4 sm:gap-8">
                 <a
                   href="https://www.sintef.no/en/projects/2025/datapact/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex h-14 w-full items-center justify-center rounded-lg border border-border/50 bg-card/50 px-4 opacity-80 transition-opacity hover:opacity-100"
+                  className="flex h-14 w-28 items-center justify-center rounded-lg border border-border/50 bg-card/50 px-4 opacity-80 transition-opacity hover:opacity-100"
                 >
-                  <img src={sintefLogo} alt="SINTEF" className="max-h-6 w-auto object-contain mix-blend-multiply" />
+                  <img src={sintefLogo} alt="SINTEF" className="max-h-[2.2rem] w-auto object-contain mix-blend-multiply" />
                 </a>
                 <a
                   href="https://datapact.eu"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex h-14 w-full items-center justify-center rounded-lg border border-border/50 bg-card/50 px-4 opacity-80 transition-opacity hover:opacity-100"
+                  className="flex h-14 w-28 items-center justify-center rounded-lg border border-border/50 bg-card/50 px-4 opacity-80 transition-opacity hover:opacity-100"
                 >
                   <img src={datapactLogo} alt="DataPACT" className="max-h-6 w-auto object-contain" />
                 </a>
