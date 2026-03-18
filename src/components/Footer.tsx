@@ -57,13 +57,15 @@ const Footer = () => {
             )}
           </nav>
         </div>
-        <div className="flex items-center justify-center gap-6 mt-6 pt-6 border-t border-muted-foreground/20">
-          <span className="text-xs text-muted/60 uppercase tracking-wider">In collaboration with</span>
-          <a href="https://www.sintef.no/en/projects/2025/datapact/" target="_blank" rel="noopener noreferrer" className="flex h-6 w-24 items-center justify-center opacity-60 transition-opacity hover:opacity-100">
-            <img src={sintefLogoWhite} alt="SINTEF" className="max-h-full w-auto object-contain" />
+        <div className="grid grid-cols-1 gap-3 mt-6 pt-6 border-t border-muted-foreground/20 sm:grid-cols-3 sm:items-center sm:gap-4">
+          <div className="flex h-14 w-full items-center justify-start sm:justify-center">
+            <span className="text-xs text-muted/60 uppercase tracking-[0.22em] leading-snug text-left sm:text-center">In collaboration with</span>
+          </div>
+          <a href="https://www.sintef.no/en/projects/2025/datapact/" target="_blank" rel="noopener noreferrer" className="flex h-14 w-full items-center justify-center rounded-lg border border-muted-foreground/15 bg-background/5 px-4 opacity-70 transition-opacity hover:opacity-100">
+            <img src={sintefLogoWhite} alt="SINTEF" className="max-h-6 w-auto object-contain" />
           </a>
-          <a href="https://datapact.eu" target="_blank" rel="noopener noreferrer" className="flex h-6 w-24 items-center justify-center opacity-60 transition-opacity hover:opacity-100">
-            <img src={datapactLogo} alt="DataPACT" className="max-h-full w-auto object-contain" />
+          <a href="https://datapact.eu" target="_blank" rel="noopener noreferrer" className="flex h-14 w-full items-center justify-center rounded-lg border border-muted-foreground/15 bg-background/5 px-4 opacity-70 transition-opacity hover:opacity-100">
+            <img src={datapactLogo} alt="DataPACT" className="max-h-6 w-auto object-contain" />
           </a>
         </div>
       </div>
