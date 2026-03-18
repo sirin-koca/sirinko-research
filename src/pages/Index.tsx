@@ -5,6 +5,7 @@ import ThesisSection from "@/components/ThesisSection";
 import JourneySection from "@/components/JourneySection";
 import SkillsSection from "@/components/SkillsSection";
 import Contact from "@/components/Contact";
+import CollaborationStrip from "@/components/CollaborationStrip";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -18,6 +19,7 @@ const Index = () => {
       <JourneySection />
       <SkillsSection />
       <Contact />
+      <CollaborationStrip />
       <Footer />
       <ScrollToTop />
     </div>
