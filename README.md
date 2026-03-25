@@ -2,7 +2,7 @@
 
 ## Project info
 
-This is my Master's Thesis project portfolio.
+This is my Master's Thesis project portfolio page.
 
 **URL**: [sirinko-research](https://sirinko-research.lovable.app/)
 
