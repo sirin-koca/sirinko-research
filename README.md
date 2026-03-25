@@ -4,7 +4,8 @@
 
 This is my Master's Thesis project portfolio page.
 
-**URL**: [sirinko-research](https://sirinko-research.lovable.app/)
+**URL**: <a href="https://sirinko-research.lovable.app/" target="_blank">sirinko-research</a>
+
 
 <img width="90%" alt="image" src="https://github.com/user-attachments/assets/17ea9fa9-89a4-4c5a-b012-b5972b7c03d4" />
 
