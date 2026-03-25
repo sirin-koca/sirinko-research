@@ -1,4 +1,4 @@
-# Welcome to sirinko-research!
+# sirinko-research
 
 ## Project info
 
