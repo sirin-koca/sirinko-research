@@ -20,10 +20,8 @@ This project is built with:
 - Tailwind CSS
 
 
+<img width="40%" alt="image" src="https://github.com/user-attachments/assets/8ca35a84-7145-410e-a5f5-a1d4b6e76a7e" />
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
 
 ---
 Sirin Koca 2026, Department of Informatics, UIO, Oslo
