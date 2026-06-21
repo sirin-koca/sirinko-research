@@ -22,4 +22,4 @@ This project is built with:
 
 
 ---
-Sirin Koca 2026, Department of Informatics, UIO, Oslo
+Sirin Koca, Department of Informatics, UIO, Oslo 2026
