@@ -1,4 +1,4 @@
-import { GraduationCap, Code, Brain, Shield } from "lucide-react";
+import { GraduationCap, Code, FileCheck, Shield } from "lucide-react";
 import datapactLogo from "@/assets/datapact-logo.png";
 import sintefLogo from "@/assets/sintef-logo.png";
 
@@ -10,19 +10,19 @@ const About = () => {
     description: "Pursuing a Master's degree at the University of Oslo, one of Europe's leading research institutions."
   },
   {
-    icon: Brain,
-    title: "AI & Machine Learning",
-    description: "Specializing in multi-agent systems, autonomous AI architectures, and intelligent automation."
+    icon: FileCheck,
+    title: "Policy-as-Code",
+    description: "Encoding organisational policy expectations as machine-checkable rules with Open Policy Agent and Rego."
   },
   {
     icon: Shield,
     title: "Privacy Engineering",
-    description: "Focused on building systems that respect user privacy while delivering powerful AI capabilities."
+    description: "Making privacy and data-protection controls visible and reviewable in data pipeline designs."
   },
   {
     icon: Code,
     title: "Systems Architecture",
-    description: "Designing scalable data pipelines and distributed systems for real-world applications."
+    description: "Studying how architectural metadata can support compliance review of data pipelines at design time."
   }];
 
 
@@ -41,7 +41,7 @@ const About = () => {
             </h2>
             <div className="space-y-4 prose-academic">
               <p>
-                As a Master's student at the University of Oslo, I'm passionate about the intersection of artificial intelligence, systems architecture, privacy and security engineering. My research focuses on creating AI systems that are not just intelligent, but also secure and respectful of user privacy.
+                As a Master's student at the University of Oslo, I'm passionate about the intersection of artificial intelligence, systems architecture, privacy and security engineering. My research focuses on how compliance-relevant design decisions in data pipelines can be inspected before the pipelines are built.
               
 
 
@@ -49,8 +49,8 @@ const About = () => {
               <p>
                 This website serves as a living document of my academic journey—from 
                 coursework discoveries to thesis breakthroughs. Here, I share insights, 
-                challenges, and progress as I work towards building a privacy-aware 
-                multi-agent AI system for data pipelines.
+                challenges, and progress as I work towards building InspectR, a design-time 
+                compliance inspection tool for data pipelines.
               </p>
               <div className="flex items-center justify-center gap-6 pt-4 sm:gap-8">
                 <a

@@ -13,14 +13,14 @@ const SkillsSection = () => {
       skills: ["Python", "R", "Data Analysis"],
     },
     {
-      title: "AI Frameworks",
+      title: "Policy-as-Code",
       icon: Database,
-      skills: ["LangChain", "AutoGen"],
+      skills: ["Open Policy Agent (OPA)", "Rego"],
     },
     {
-      title: "Orchestration",
+      title: "Data Pipelines",
       icon: BarChart3,
-      skills: ["Kubeflow", "Docker"],
+      skills: ["JSON Blueprints", "inLUMEN"],
     },
     {
       title: "Visualization",

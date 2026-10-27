@@ -1,186 +1,101 @@
-import { Bot, Database, Lock, Workflow, Cpu, ShieldCheck, Code, BarChart3 } from "lucide-react";
+import { FileJson, ScrollText, ShieldCheck, ListChecks, Lightbulb, Hammer, FlaskConical, Users, AlertTriangle } from "lucide-react";
 
 const ThesisSection = () => {
   const concepts = [
-    {
-      icon: Bot,
-      title: "Multi-Agent System",
-      description: "Autonomous agents collaborating to process and transform data through intelligent orchestration.",
-    },
-    {
-      icon: Lock,
-      title: "Privacy-Aware Design",
-      description: "Built-in privacy controls ensuring data protection at every stage of the pipeline.",
-    },
-    {
-      icon: Workflow,
-      title: "Data Pipeline",
-      description: "Automated workflows for ingesting, processing, and delivering data with minimal human intervention.",
-    },
-    {
-      icon: Database,
-      title: "Scalable Architecture",
-      description: "Designed to handle growing data volumes while maintaining performance and reliability.",
-    },
+    { icon: FileJson, title: "Pipeline Blueprint", description: "A machine-readable JSON description of a planned data pipeline: its sources, activities, controls, gates and destinations." },
+    { icon: ScrollText, title: "Policy-as-Code", description: "Selected organisational policy expectations encoded as Rego rules and evaluated by Open Policy Agent (OPA)." },
+    { icon: ListChecks, title: "Explainable Findings", description: "Each check returns PASS, FAIL or HUMAN review, with a reason, blueprint evidence and remediation guidance." },
+    { icon: ShieldCheck, title: "Design-Time Review", description: "Supports review before a pipeline is built, by asking whether selected controls are represented in its design." },
+  ];
+
+  const checks = [
+    ["TK-001", "DPIA checkpoint", "Is a DPIA checkpoint declared when a source declares personal and special-category data?"],
+    ["TK-002", "Risk-assessment checkpoint", "Is a risk-assessment checkpoint declared for special-category data?"],
+    ["TK-003", "Data-sharing agreement", "Is an agreement checkpoint represented when personal data is transferred?"],
+    ["TK-004", "Lineage record", "Do integration steps declare a lineage record?"],
+    ["TK-005", "Purpose compatibility", "Is purpose compatibility explicitly declared? Missing values are escalated to human review."],
+    ["TK-006", "Sharing safeguards", "Are five specified safeguard declarations present on the named workflow nodes?"],
+  ];
+
+  const phases = [
+    { icon: Lightbulb, title: "Problem Identification", text: "Motivated by the need to review compliance-relevant design decisions in data pipelines before they are implemented." },
+    { icon: Hammer, title: "Design & Development", text: "Iteratively building the InspectR proof of concept: blueprint input, OPA/Rego checks and a Streamlit results interface." },
+    { icon: FlaskConical, title: "Demonstration", text: "Applying the artifact to the DataPACT MUNDAT use case: municipal data sharing by Trondheim Kommune." },
+    { icon: Users, title: "Evaluation (planned)", text: "Evaluation design, including stakeholder validation, is still under development." },
   ];
 
   return (
     <section id="thesis" className="section-padding bg-muted/30">
       <div className="container mx-auto">
-        {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-accent font-medium tracking-wider uppercase text-sm mb-4">
-            My Research
-          </p>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Master's Thesis
-          </h2>
+          <p className="text-accent font-medium tracking-wider uppercase text-sm mb-4">My Research</p>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">Master's Thesis</h2>
           <p className="prose-academic text-lg">
-            Building a Privacy-Aware Multi-Agent AI System for Intelligent Data Pipelines
+            InspectR: design-time architectural compliance inspection of data pipelines
           </p>
         </div>
 
-        {/* Visual Architecture Representation */}
         <div className="bg-card rounded-2xl p-6 sm:p-8 md:p-12 card-elevated mb-12 overflow-hidden">
-          <h3 className="font-serif text-xl font-semibold text-foreground mb-6 text-center">
-            System Architecture Overview
-          </h3>
-          
-          {/* Simplified architecture diagram */}
-          <div className="relative">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-4">
-              {/* Data Sources */}
-              <div className="bg-primary/5 border border-primary/20 rounded-xl p-4 text-center min-w-[140px]">
-                <Database className="w-8 h-8 text-primary mx-auto mb-2" />
-                <p className="text-sm font-medium text-foreground">Data Sources</p>
+          <h3 className="font-serif text-xl font-semibold text-foreground mb-6 text-center">How InspectR Works</h3>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+            {["JSON blueprint", "Structure validation", "OPA evaluates Rego policies", "Result validation", "Findings with reasons, evidence & remedies"].map((s, i, a) => (
+              <div key={s} className="flex flex-col md:flex-row items-center gap-4">
+                <div className={`rounded-xl p-4 text-center min-w-[140px] max-w-[180px] text-sm font-medium text-foreground ${i === 2 ? "bg-accent/10 border-2 border-accent/30 glow-amber" : "bg-primary/5 border border-primary/20"}`}>{s}</div>
+                {i < a.length - 1 && <><div className="hidden md:block w-6 h-0.5 bg-border" /><div className="md:hidden h-6 w-0.5 bg-border" /></>}
               </div>
-              
-              {/* Arrow */}
-              <div className="hidden md:block w-8 h-0.5 bg-border" />
-              <div className="md:hidden h-8 w-0.5 bg-border" />
-              
-              {/* Multi-Agent Core */}
-              <div className="bg-accent/10 border-2 border-accent/30 rounded-xl p-6 text-center min-w-[180px] glow-amber">
-                <div className="flex justify-center gap-2 mb-3">
-                  <Bot className="w-6 h-6 text-accent" />
-                  <Bot className="w-6 h-6 text-accent" />
-                  <Bot className="w-6 h-6 text-accent" />
-                </div>
-                <p className="text-sm font-semibold text-foreground">Multi-Agent Core</p>
-                <p className="text-xs text-muted-foreground mt-1">Privacy-Aware Processing</p>
-              </div>
-              
-              {/* Arrow */}
-              <div className="hidden md:block w-8 h-0.5 bg-border" />
-              <div className="md:hidden h-8 w-0.5 bg-border" />
-              
-              {/* Output */}
-              <div className="bg-primary/5 border border-primary/20 rounded-xl p-4 text-center min-w-[140px]">
-                <Workflow className="w-8 h-8 text-primary mx-auto mb-2" />
-                <p className="text-sm font-medium text-foreground">Data Pipeline</p>
-              </div>
-            </div>
-            
-            {/* Privacy Shield Overlay */}
-            <div className="absolute -top-2 -right-2 bg-accent text-accent-foreground p-2 rounded-full">
-              <Lock className="w-4 h-4" />
-            </div>
+            ))}
           </div>
         </div>
 
-        {/* Key Concepts Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {concepts.map((concept, index) => (
-            <div
-              key={concept.title}
-              className="text-center"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
+          {concepts.map((c) => (
+            <div key={c.title} className="text-center">
               <div className="w-16 h-16 bg-card rounded-xl flex items-center justify-center mx-auto mb-4 card-elevated">
-                <concept.icon className="w-8 h-8 text-accent" />
+                <c.icon className="w-8 h-8 text-accent" />
               </div>
-              <h4 className="font-serif text-lg font-semibold text-foreground mb-2">
-                {concept.title}
-              </h4>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {concept.description}
-              </p>
+              <h4 className="font-serif text-lg font-semibold text-foreground mb-2">{c.title}</h4>
+              <p className="text-sm text-muted-foreground leading-relaxed">{c.description}</p>
             </div>
           ))}
         </div>
 
-        {/* Research Questions */}
         <div className="mt-16 bg-card rounded-2xl p-8 card-elevated">
-          <h3 className="font-serif text-xl font-semibold text-foreground mb-6">
-            Research Questions
-          </h3>
+          <h3 className="font-serif text-xl font-semibold text-foreground mb-2">What the Current Prototype Inspects</h3>
+          <p className="text-sm text-muted-foreground mb-6">Six selected policy checks for the MUNDAT example scenario. They are not a comprehensive encoding of GDPR, the AI Act or all MUNDAT requirements.</p>
           <ul className="space-y-4">
-            <li className="flex items-start gap-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center text-accent font-semibold text-sm">1</span>
-              <p className="prose-academic"><strong>Architecture:</strong> How can a multi-agent LLM architecture be designed so that specialized agents collaboratively generate end-to-end data pipelines (ingestion, transformation, validation, orchestration)?</p>
-            </li>
-            <li className="flex items-start gap-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center text-accent font-semibold text-sm">2</span>
-              <p className="prose-academic"><strong>Agent Interaction & Coordination:</strong> What agent roles, communication patterns, and coordination mechanisms ensure reliability, consistency, and conflict resolution during automated pipeline generation?</p>
-            </li>
-            <li className="flex items-start gap-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center text-accent font-semibold text-sm">3</span>
-              <p className="prose-academic"><strong>Privacy Engineering:</strong> How can PbD/SbD constraints (data minimization, sensitivity labelling, anonymization, access control, encryption, provenance logging) be technically embedded into the generation workflow without reducing flexibility or correctness?</p>
-            </li>
-            <li className="flex items-start gap-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center text-accent font-semibold text-sm">4</span>
-              <p className="prose-academic"><strong>Pipeline Quality:</strong> To what extent do LLM-generated pipelines satisfy structural correctness, functional completeness, and privacy/security constraints compared to manually engineered pipelines?</p>
-            </li>
-            <li className="flex items-start gap-4">
-              <span className="flex-shrink-0 w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center text-accent font-semibold text-sm">5</span>
-              <p className="prose-academic"><strong>Performance, Scalability & Efficiency:</strong> How do multi-agent generation strategies impact performance, scalability, and energy usage, and what trade-offs emerge when privacy/security constraints are enforced?</p>
-            </li>
+            {checks.map(([id, title, q]) => (
+              <li key={id} className="flex items-start gap-4">
+                <span className="flex-shrink-0 px-2 h-8 bg-accent/10 rounded-full flex items-center justify-center text-accent font-semibold text-xs">{id}</span>
+                <p className="prose-academic"><strong>{title}:</strong> {q}</p>
+              </li>
+            ))}
           </ul>
+          <p className="text-sm text-muted-foreground mt-6 italic">The research questions are currently being refined and will be published here once finalised.</p>
         </div>
 
-        {/* Methodology */}
         <div className="mt-12 bg-card rounded-2xl p-8 card-elevated">
-          <h3 className="font-serif text-xl font-semibold text-foreground mb-8">
-            Methodology
-          </h3>
+          <h3 className="font-serif text-xl font-semibold text-foreground mb-2">Methodology</h3>
+          <p className="text-sm text-muted-foreground mb-8">Design Science Research, conducted with SINTEF within the EU project DataPACT.</p>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
-                <Cpu className="w-5 h-5 text-accent" />
+            {phases.map((p) => (
+              <div key={p.title} className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
+                  <p.icon className="w-5 h-5 text-accent" />
+                </div>
+                <div>
+                  <h4 className="font-serif font-semibold text-foreground mb-1">{p.title}</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{p.text}</p>
+                </div>
               </div>
-              <div>
-                <h4 className="font-serif font-semibold text-foreground mb-1">System Architecture Design</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">Define specialized agents (Pipeline Designer, Data Minimization, Security Constraints, Validation, Orchestrator) with communication protocols and coordination model.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
-                <ShieldCheck className="w-5 h-5 text-accent" />
-              </div>
-              <div>
-                <h4 className="font-serif font-semibold text-foreground mb-1">Privacy Engineering Integration</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">Implement privacy and security constraints as technical rules — data minimization, sensitivity tagging, anonymization, encryption, access control, and provenance metadata.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
-                <Code className="w-5 h-5 text-accent" />
-              </div>
-              <div>
-                <h4 className="font-serif font-semibold text-foreground mb-1">Prototype Implementation</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">Implement using AutoGen, LangChain Agents, CrewAI, or a custom multi-agent controller, generating pipeline descriptions comparable to Airflow/Kubeflow-style DAGs.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 bg-accent/10 rounded-lg flex items-center justify-center">
-                <BarChart3 className="w-5 h-5 text-accent" />
-              </div>
-              <div>
-                <h4 className="font-serif font-semibold text-foreground mb-1">Evaluation</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">Compare auto-generated pipelines against manually designed baselines using metrics: structural correctness, agent consistency, performance, privacy/security compliance, scalability, and energy usage.</p>
-              </div>
-            </div>
+            ))}
           </div>
+        </div>
+
+        <div className="mt-12 rounded-2xl border border-accent/30 bg-accent/5 p-6 flex gap-4 items-start">
+          <AlertTriangle className="w-5 h-5 text-accent flex-shrink-0 mt-1" />
+          <p className="text-sm text-muted-foreground leading-relaxed">
+            <strong className="text-foreground">Scope.</strong> InspectR checks what a design <em>declares</em>. A PASS means a control is represented in the blueprint. It does not establish that the control exists, works at runtime, or that an organisation is legally compliant. InspectR supports design review; it does not replace legal interpretation, authorised approval or runtime assurance.
+          </p>
         </div>
       </div>
     </section>

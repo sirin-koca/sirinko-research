@@ -20,10 +20,10 @@ const Hero = () => {
             Sirin Koca • Master's Thesis • University of Oslo • SINTEF
           </p>
           <h1 className="mb-6 font-serif text-3xl font-bold leading-tight text-primary-foreground md:text-4xl lg:text-5xl">
-            Architecting Multi-Agent AI Systems
+            InspectR
           </h1>
           <p className="mx-auto mb-8 max-w-2xl text-lg leading-relaxed text-primary-foreground/70 md:text-xl">
-            An AI system for automated data pipeline generation with built-in governance.
+            Design-time architectural compliance inspection of data pipelines.
           </p>
 
           <div className="mb-6 animate-bounce">
@@ -49,7 +49,7 @@ const Hero = () => {
 
           <div className="mx-auto mt-10 max-w-3xl rounded-xl border border-primary-foreground/15 bg-primary-foreground/5 px-8 py-6 backdrop-blur-sm">
             <p className="text-sm font-light leading-relaxed tracking-wide text-primary-foreground/80 md:text-base">
-              This thesis investigates how specialized AI agents collaborate to generate data pipelines while embedding privacy-by-design and security-by-design principles directly into the system architecture. The project develops a prototype multi-agent architecture and evaluates its ability to generate reliable and compliant workflows compared to manually engineered pipelines.
+              InspectR is an early-stage research prototype that inspects a planned data pipeline before it is built. It evaluates a machine-readable JSON blueprint against explicitly encoded organisational policies (OPA/Rego) and explains each finding with a reason, blueprint evidence and remediation guidance. It is being developed with SINTEF and applied to the DataPACT MUNDAT use case for municipal data sharing.
             </p>
           </div>
         </div>
